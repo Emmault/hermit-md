@@ -1,6 +1,6 @@
 FROM quay.io/hermit/hermit-ser:latest
 
-RUN git clone https://github.com/A-d-i-t-h-y-a-n/hermit-md.git temp && mv temp/.git .git && rm -rf temp
+RUN git clone  https://github.com/Ultar1/hermit-md/koyeb/hermit-md/
 WORKDIR /root/hermit-md/
 RUN yarn install --network-concurrency 1
 CMD ["node", "index.js"]
