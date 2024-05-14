@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "pm2 start . --attach --name hermit-md"
+    "heroku-postbuild": "git clone https://github.com/A-d-i-t-h-y-a-n/hermit-md.git temp && mv temp/.git .git && rm -rf temp"
   },
   "author": "A-d-i-t-h-y-a-n",
   "license": "ISC",
